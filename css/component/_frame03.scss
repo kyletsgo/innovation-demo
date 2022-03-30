@@ -1,0 +1,63 @@
+.frame03 {
+    display: none;
+    padding-top: 940px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    &.base {
+        color: $green-txt;
+
+        & * {
+            position: relative;
+        }
+
+        .banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            &__leave {
+                position: absolute;
+                top: 100px;
+                pointer-events: none;
+                z-index: 2;
+            }
+
+        }
+
+        .content {
+            position: relative;
+            padding-top: 50px;
+            text-align: center;
+            background-color: #aaca78;
+            z-index: 1;
+
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 730px;
+                top: -120px;
+                background: url(../images/bg-base.png) no-repeat top center;
+                background-size: 100% auto;
+                z-index: 0;
+            }
+
+            h2 {
+                font-family: 'Noto Serif TC', 'Microsoft JhengHei', 'Noto Sans Myanmar', 'Arial', 'sans-serif';
+                letter-spacing: 2px;
+                font-size: 27px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 19px;
+                font-weight: 500;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}

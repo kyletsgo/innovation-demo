@@ -1,0 +1,40 @@
+@charset "UTF-8";
+.popup {
+    .modal{
+        &-content {
+            padding-top: 60px;
+        }
+        &-body {
+            padding: 0 15px;
+            text-align: center;
+            font-size: 20px;
+            color: $green-txt;
+            font-weight: 600;
+            p {
+                font-size: 20px;
+            }
+        }
+        &-footer {
+            padding: 0 15px 60px;
+            border: none;
+            justify-content: center;
+            button {
+                padding: 7px 30px;
+                border-radius: 30px;
+                border: none;
+                background-color: $yellow-base;
+                color: $green-btn;
+                font-weight: 600;
+                font-size: 18px;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+}
