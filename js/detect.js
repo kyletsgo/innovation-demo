@@ -112,24 +112,25 @@ detect = function () {
         };
     
         for (const eye of [features.eyeLeft, features.eyeRight]) {
-          // const eyeBox = getBoxFromPoints(eye);
-          // const text = [
-          //   '⭐️'
-          // ]
-          // const anchor = {x: eyeBox.center.x - 14, y: eyeBox.center.y - 8}
-          // const drawOptions = {
-          //   anchorPosition: 'TOP_LEFT',
-          //   backgroundColor: 'rgba(0, 0, 0, 0)'
-          // }
-          // const drawBox = new faceapi.draw.DrawTextField(text, anchor, drawOptions)
-
-
-          const box = { x: 50, y: 50, width: 100, height: 100 }
+          const eyeBox = getBoxFromPoints(eye);
+          const text = [
+            '⭐️'
+          ]
+          const anchor = {x: eyeBox.center.x - 14, y: eyeBox.center.y - 8}
           const drawOptions = {
-            label: '⭐️',
-            lineWidth: 2
+            anchorPosition: 'TOP_LEFT',
+            fontSize: 30,
+            backgroundColor: 'rgba(0, 0, 0, 0)'
           }
-          const drawBox = new faceapi.draw.DrawBox(box, drawOptions)
+          const drawBox = new faceapi.draw.DrawTextField(text, anchor, drawOptions)
+
+
+          // const box = { x: 50, y: 50, width: 100, height: 100 }
+          // const drawOptions = {
+          //   label: '⭐️',
+          //   lineWidth: 2
+          // }
+          // const drawBox = new faceapi.draw.DrawBox(box, drawOptions)
 
 
 
