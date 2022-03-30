@@ -116,10 +116,10 @@ detect = function () {
           const text = [
             '⭐️'
           ]
-          const anchor = {x: eyeBox.center.x - 14, y: eyeBox.center.y - 8}
+          const anchor = {x: eyeBox.center.x - 14, y: eyeBox.center.y - 10}
           const drawOptions = {
             anchorPosition: 'TOP_LEFT',
-            fontSize: 30,
+            fontSize: 60,
             backgroundColor: 'rgba(0, 0, 0, 0)'
           }
           const drawBox = new faceapi.draw.DrawTextField(text, anchor, drawOptions)
