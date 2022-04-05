@@ -2,6 +2,9 @@
   "name": "agar-clone",
   "version": "1.0.0",
   "description": "A simple Agar.io clone",
+  "engines": {
+    "node": "10.x"
+  },
   "main": "server/server.js",
   "scripts": {
     "build": "gulp build",
